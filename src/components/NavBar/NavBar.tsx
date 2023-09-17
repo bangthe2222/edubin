@@ -46,9 +46,9 @@ export default function NavBar() {
           
           <div onClick={toggleMenu}  className=' flex grow justify-end nav-child lg:hidden '>
                 <FiMenu></FiMenu>
-          </div>
-
-        { menuOpen&&(<div>
+          </div>    
+      </nav>
+      { menuOpen&&(<div>
           <div  className=' bg-neutral-950 lg:hidden fixed right-0 h-full z-10'>
             <div className=' text-white' onClick={toggleMenu}>
               <div className=' p-2 flex justify-end hover:cursor-pointer'>
@@ -73,8 +73,6 @@ export default function NavBar() {
           </div>
 
         </div>)}
-          
-      </nav>
     </main>
   )
 }
