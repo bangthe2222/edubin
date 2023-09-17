@@ -55,19 +55,19 @@ export default function NavBar() {
                 <AiOutlineCloseCircle size={30} color={"#ff4d4d"}></AiOutlineCloseCircle>
               </div>
             </div>
-            <div className=' nav-child'>
-                <Link href={"/about"}>About us</Link>
+            <div className=' nav-child' onClick={toggleMenu}>
+                <Link href={"/about"}  >About us</Link>
               </div>
-              <div className=' nav-child'>
+              <div className=' nav-child' onClick={toggleMenu}>
                 <Link href={"/services"}>Services</Link>
               </div>
-              <div className=' nav-child'>
+              <div className=' nav-child' onClick={toggleMenu}>
                 <Link href={"/dataset"}>Waste Image Dataset </Link>
               </div>
-              <div className=' nav-child'>
+              <div className=' nav-child' onClick={toggleMenu}>
                 <Link href={"/innovations"}>Inovations</Link>
               </div>
-              <div className=' nav-child'>
+              <div className=' nav-child' onClick={toggleMenu}>
                 <Link href={"/contact"}>Contact us</Link>
               </div>
           </div>
