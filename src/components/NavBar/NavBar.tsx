@@ -49,7 +49,7 @@ export default function NavBar() {
           </div>
 
         { menuOpen&&(<div>
-          <div  className=' bg-neutral-950 lg:hidden fixed right-0 h-full '>
+          <div  className=' bg-neutral-950 lg:hidden fixed right-0 h-full z-10'>
             <div className=' text-white' onClick={toggleMenu}>
               <div className=' p-2 flex justify-end hover:cursor-pointer'>
                 <AiOutlineCloseCircle size={30} color={"#ff4d4d"}></AiOutlineCloseCircle>
