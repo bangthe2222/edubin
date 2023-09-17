@@ -20,7 +20,7 @@ export default function Home() {
       </div>
       <div className=' w-full flex justify-center text-center mt-5'>
         <div className='w-[90%] bg-neutral-950 rounded-lg text-neutral-100'>
-        <p className=' text-3xl lg:text-5xl mt-10 mb-10'> EduBin - Bigger Waste Dataset, Better Sustainable Solutions </p>
+        <p className=' text-3xl lg:text-5xl mt-10 mb-10 ml-5 mr-5'> EduBin - Bigger Waste Dataset, Better Sustainable Solutions </p>
         </div>
         
       </div>
