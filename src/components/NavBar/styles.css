@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-child{
+    @apply text-xl lg:text-xl p-4 text-neutral-600 hover:text-neutral-200 
+}

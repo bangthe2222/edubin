@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.footer-child{
+    @apply p-2
+}
+
+.item-footer{
+  @apply flex flex-wrap break-words p-2
+}

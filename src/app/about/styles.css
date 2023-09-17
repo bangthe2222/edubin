@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.image-container{
+    @apply  w-[100%] lg:w-[50%] lg:p-5 max-lg:mt-4 
+}
+.image-inside{
+    @apply  rounded-lg
+}

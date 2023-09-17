@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.image-inside{
+    @apply rounded-lg m-4
+}
+.image-container{
+    @apply flex justify-center
+}

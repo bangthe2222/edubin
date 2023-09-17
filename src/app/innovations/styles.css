@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-title{
+    @apply text-lg font-bold mt-1
+}
+.text-infor{
+    @apply text-lg mt-1
+}
+.image-inside{
+    @apply rounded-lg m-4
+}
+.member-infor{
+    @apply flex justify-center p-4 
+}
