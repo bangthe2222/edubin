@@ -4,6 +4,7 @@ import Link from 'next/link'
 import "./styles.css"
 import {FiMenu} from "react-icons/fi"
 import {useState} from "react"
+import {AiOutlineCloseCircle} from "react-icons/ai"
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -48,7 +49,12 @@ export default function NavBar() {
           </div>
 
         { menuOpen&&(<div>
-          <div  className='flex flex-wrap grow justify-end lg:hidden'>
+          <div  className=' bg-neutral-950 lg:hidden fixed right-0 h-full '>
+            <div className=' text-white' onClick={toggleMenu}>
+              <div className=' p-2 flex justify-end hover:cursor-pointer'>
+                <AiOutlineCloseCircle size={30} color={"#ff4d4d"}></AiOutlineCloseCircle>
+              </div>
+            </div>
             <div className=' nav-child'>
                 <Link href={"/about"}>About us</Link>
               </div>
