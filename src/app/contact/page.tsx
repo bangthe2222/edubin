@@ -1,9 +1,47 @@
 "use client"
 import Image from 'next/image'
+import { useState } from 'react';
 import "./styles.css"
 
 export default function Home() {
- 
+  const [firstname, setFirstName] = useState('');
+  const [lastname, setLastName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleFirtNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFirstName(e.target.value);
+  };
+  const handleLastNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setLastName(e.target.value);
+  };
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPhone(e.target.value);
+  };
+
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setMessage(e.target.value);
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const res = await fetch(`/api/sendmail?name=${firstname+" "+ lastname}&phone=${phone}&email=${email}&message=${message}`,{
+      method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ data: 'example' })})
+    setEmail("");
+    setFirstName("");
+    setLastName("");
+    setMessage("");
+    setPhone("");
+    console.log(res);
+  }
   return (
     <div className="">
       {/* Contact infor */}
@@ -26,6 +64,8 @@ export default function Home() {
         </div>
 
       </div>
+      
+      {/* Member Image */}
       <div className=' flex justify-center mt-10'>
         <div className=' w-[90%] grid lg:grid-cols-4 grid-cols-1'>
           <div>
@@ -133,31 +173,31 @@ export default function Home() {
      {/* Email form */}
       <div className=' flex justify-center mt-10'>
         <div className='  w-[90%]  text-xl'>
-          <form action="" method="submit">
+          <form action="" method="submit" onSubmit={handleSubmit}>
             {/* Email */}
             <label htmlFor="" className=' label' >Email:</label>
             <br />
-            <input type="email" className=' input' required/>
+            <input type="email" className=' input'  required onChange={ handleEmailChange} value={email}/>
             <br />
             {/* First Name */}
             <label htmlFor="" className=' label'>First Name:</label>
             <br />
-            <input type="text" className=' input' required/>
+            <input type="text" className=' input' required onChange={ handleFirtNameChange} value={firstname}/>
             <br />
             {/* Last Name */}
             <label htmlFor="" className=' label'>Last Name:</label>
             <br />
-            <input type="text" className=' input' required/>
+            <input type="text" className=' input' required onChange={handleLastNameChange} value={lastname}/>
             <br />
             {/* Phone Number */}
             <label htmlFor="" className=' label'>Phone Number:</label>
             <br />
-            <input type="phone" className=' input' required/>
+            <input type="phone" className=' input' required onChange={handlePhoneChange} value={phone}/>
             <br />
             {/* Message */}
             <label htmlFor="" className=' label' >Message:</label>
             <br />
-            <input type="text" className=' input' required/>
+            <textarea  className=' input' required onChange={handleMessageChange} value={message}/>
             <br />
 
             <button type='submit' className=' bg-gray-900 text-white p-2 m-1 hover:text-black hover:bg-neutral-400 rounded-xl'> Submit</button>
