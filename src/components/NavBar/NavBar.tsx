@@ -45,7 +45,7 @@ export default function NavBar() {
         </div>
           
           <div onClick={toggleMenu}  className=' flex grow justify-end nav-child lg:hidden '>
-                <FiMenu></FiMenu>
+                <FiMenu size={30}></FiMenu>
           </div>    
       </nav>
       { menuOpen&&(<div>

@@ -1,7 +1,9 @@
 "use client"
 import Image from 'next/image'
 import "./styles.css"
+
 export default function Home() {
+ 
   return (
     <div className="">
       {/* Contact infor */}
@@ -89,7 +91,7 @@ export default function Home() {
           <div>
             <div className='member-infor'>
               <Image
-                    src="/about/ueh_biztech.jpg"
+                    src="/contact/member/phuong_thao.jpg"
                     width="400"
                     height="0"
                     alt="Picture of the author"
@@ -108,7 +110,7 @@ export default function Home() {
           <div>
             <div className='member-infor'>
               <Image
-                    src="/about/ueh_biztech.jpg"
+                    src="/contact/member/van_trung.jpg"
                     width="400"
                     height="0"
                     alt="Picture of the author"
@@ -128,7 +130,7 @@ export default function Home() {
       </div>
       
 
-      {/* Email form */}
+     {/* Email form */}
       <div className=' flex justify-center mt-10'>
         <div className='  w-[90%]  text-xl'>
           <form action="" method="submit">
@@ -161,7 +163,7 @@ export default function Home() {
             <button type='submit' className=' bg-gray-900 text-white p-2 m-1 hover:text-black hover:bg-neutral-400 rounded-xl'> Submit</button>
           </form>
         </div>
-      </div>
+      </div> 
 
     </div>
   )
