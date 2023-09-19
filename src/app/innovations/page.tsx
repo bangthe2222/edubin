@@ -33,7 +33,7 @@ export default function Home() {
             {/* Ver 1 */}
             <div className=' bg-neutral-950 text-white p-4 rounded-lg mt-10'>
               <p className=' text-lg  font-bold'>Version 1</p>
-              <div className=' grid lg:grid-cols-4 grid-cols-2'>
+              <div className=' grid lg:grid-cols-3 grid-cols-1'>
                 <div className='member-infor'>
                   <Image
                     src="/innovation/TRASHSCAN/ver_1/img1.JPEG"
@@ -52,15 +52,6 @@ export default function Home() {
                       className=' image-inside'
                     />
 
-                </div>
-                <div className='member-infor'>
-                  <Image
-                      src="/innovation/TRASHSCAN/ver_1/img3.JPEG"
-                      width="600"
-                      height="400"
-                      alt="Picture of the author"
-                      className=' image-inside'
-                    />
                 </div>
                 <div className='member-infor'>
                   <Image

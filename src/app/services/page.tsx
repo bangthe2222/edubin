@@ -11,23 +11,25 @@ export default function Home() {
             Comprehensive Waste Data: Access the world's largest dataset on waste, providing valuable insights for informed decision-making.
             </p>
           </div>
-          <div className=' lg:basis-1/2'>
+          <div className=' lg:basis-1/2 flex justify-center'>
             <Image
-              src="/edubin_logo.png"
+              src="/services/dataset.jpg"
               width={400}
               height={400}
               alt="Picture of the author"
+              className='image-inside'
             />
           </div>
         </div>
 
         <div className=' flex flex-wrap-reverse w-[90%] bg-neutral-950 rounded-lg mt-10'>
-          <div className=' lg:basis-1/2'>
+          <div className=' lg:basis-1/2 flex justify-center'>
             <Image
-              src="/edubin_logo.png"
+              src="/services/trashscan.jpg"
               width={400}
               height={400}
               alt="Picture of the author"
+              className='image-inside'
             />
           </div>
           <div className=' lg:basis-1/2'>
@@ -41,7 +43,7 @@ export default function Home() {
         <div className=' flex flex-wrap w-[90%] bg-neutral-950 rounded-lg mt-10'>
           <div className=' lg:basis-1/2'>
             <p className=' p-4'>
-            Comprehensive Waste Data: Access the world's largest dataset on waste, providing valuable insights for informed decision-making.
+            Data-Driven Insights: Empower your business or organization with data-driven insights that can revolutionize waste management and reduce your environmental footprint.
             </p>
           </div>
           <div className=' lg:basis-1/2'>
