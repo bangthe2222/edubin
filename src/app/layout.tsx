@@ -12,17 +12,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">    
-      <body>
+      <body className=''>
         <div className=' sticky top-0 z-10'>
           <NavBar></NavBar>
         </div>
-        <div>
+        <div className=''>
           {children}
         </div>
-        
-        <div className=' mt-10'>
+      
+        <footer className=' mt-10 bottom-0'>
           <Footer></Footer>
-        </div>
+        </footer>
         </body>
     </html>
   )

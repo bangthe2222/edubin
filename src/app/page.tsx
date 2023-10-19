@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Home page',
 }
 export default function Home() {
+
   return (
     <main className=" w-full">
       <div className=' w-full flex justify-center '>

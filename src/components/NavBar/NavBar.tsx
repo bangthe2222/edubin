@@ -40,6 +40,9 @@ export default function NavBar() {
               <Link href={"/innovations"}>Inovations</Link>
             </div>
             <div className=' nav-child'>
+              <Link href={"/demo"}>Demo</Link>
+            </div>
+            <div className=' nav-child'>
               <Link href={"/contact"}>Contact us</Link>
             </div>
         </div>
@@ -66,6 +69,9 @@ export default function NavBar() {
               </div>
               <div className=' nav-child' onClick={toggleMenu}>
                 <Link href={"/innovations"}>Inovations</Link>
+              </div>
+              <div className=' nav-child'>
+                <Link href={"/demo"}>Demo</Link>
               </div>
               <div className=' nav-child' onClick={toggleMenu}>
                 <Link href={"/contact"}>Contact us</Link>

@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.label{
+    @apply p-1
+}
+.input{
+    @apply w-[300px] lg:w-[600px] p-1 m-1 rounded-lg border border-sky-700
+}
+.member-infor{
+    @apply flex justify-center p-4 
+}
+.member-name{
+    @apply flex justify-center p-1 text-lg font-bold 
+}
+.image-inside{
+    @apply rounded-lg m-4
+}
+
