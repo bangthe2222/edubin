@@ -70,7 +70,7 @@ export default function NavBar() {
               <div className=' nav-child' onClick={toggleMenu}>
                 <Link href={"/innovations"}>Inovations</Link>
               </div>
-              <div className=' nav-child'>
+              <div className=' nav-child' onClick={toggleMenu}>
                 <Link href={"/demo"}>Demo</Link>
               </div>
               <div className=' nav-child' onClick={toggleMenu}>

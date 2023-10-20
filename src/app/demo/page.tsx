@@ -55,7 +55,7 @@ export default function ImageUpload() {
   return (
     <div className=' flex justify-center '>
 
-      <div className=' grid text-center mt-32 mb-32 bg-neutral-900 text-neutral-300 text-xl p-10 rounded-xl'>
+      <div className=' max-w-[90%] grid text-center mt-32 mb-32 bg-neutral-900 text-neutral-300 text-xl p-1 lg:p-10 rounded-xl'>
         <h1>Image Upload</h1>
         {selectedImage && (
           <div>
