@@ -40,8 +40,10 @@ export default function ImageUpload() {
         const data_ = await response.json();
         const class_ = data_["predictions"][0]["tagName"];
         const acc_ = data_["predictions"][0]["probability"];
-        setObjectClass(class_);
+        
         setProbability(acc_);
+        
+        setObjectClass(class_);
         // console.log(class_, acc_)
         
       } else {
