@@ -70,7 +70,7 @@ export default function ImageUpload() {
                   width="400"
                   height="0"
                   alt="edubin-logo"
-                  className=' w-[90%]  rounded-lg mt-4 h-auto max-lg:hidden'
+                  className=' w-[90%]  rounded-lg mt-4 h-auto '
                 />
      
                 </div>
@@ -78,16 +78,16 @@ export default function ImageUpload() {
 
               <p>Class: {objectClass}</p>
               <p>Prob: {probability}</p>
-              
+              <input className=' p-2 m-2' accept="image/*" type="file" onChange={handleImageUpload} />
+              <div className=' flex w-full justify-center'>
+                <button className=' p-2 rounded-md hover:bg-slate-100 hover:text-neutral-900 w-fit' onClick={UpLoadImage}>Upload</button>
+              </div>
               </div>
             </div>
           </div>
         )}
 
-        <input className=' p-2 m-2' accept="image/*" type="file" onChange={handleImageUpload} />
-        <div className=' flex w-full justify-center'>
-          <button className=' p-2 rounded-md hover:bg-slate-100 hover:text-neutral-900 w-fit' onClick={UpLoadImage}>Upload</button>
-        </div>
+        
         
       </div>
 
