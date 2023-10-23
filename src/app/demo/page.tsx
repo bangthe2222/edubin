@@ -67,10 +67,10 @@ export default function ImageUpload() {
                 <div className=' flex justify-center max-w-full'>
                   <Image
                   src={selectedImage}
-                  width="400"
+                  width="200"
                   height="0"
                   alt="edubin-logo"
-                  className=' w-[90%]  rounded-lg mt-4 h-auto '
+                  className=' rounded-lg mt-4 h-auto '
                 />
      
                 </div>
