@@ -65,14 +65,14 @@ export default function ImageUpload() {
             <div className=' flex justify-center'>  
               <div className=' grid'>
                 <div className=' flex justify-center max-w-full'>
-                  <Image
+                  {/* <Image
                   src={selectedImage}
                   width="200"
                   height="0"
                   alt="edubin-logo"
                   className=' rounded-lg mt-4 h-auto '
                 />
-     
+      */}
                 </div>
         
 
