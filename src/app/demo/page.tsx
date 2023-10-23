@@ -64,14 +64,15 @@ export default function ImageUpload() {
             <h2 className="text-lg font-bold mb-2">Selected Image:</h2>
             <div className=' flex justify-center'>  
               <div className=' grid'>
-                <div className=' flex justify-center'>
+                <div className=' flex justify-center max-w-full'>
                   <Image
                   src={selectedImage}
                   width="400"
                   height="0"
-                  alt="video"
-                  className=' w-[90%]  rounded-lg mt-4 h-auto '
+                  alt="edubin-logo"
+                  className=' w-[90%]  rounded-lg mt-4 h-auto max-lg:hidden'
                 />
+     
                 </div>
         
 
