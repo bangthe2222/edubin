@@ -78,7 +78,10 @@ export default function ImageUpload() {
 
               <p>Class: {objectClass}</p>
               <p>Prob: {probability}</p>
-              <input className=' p-2 m-2' accept="image/*" type="file" onChange={handleImageUpload} />
+              <div className=' flex justify-center w-full'>
+                <input className=' p-2 m-2 w-[80%]' accept="image/*" type="file" onChange={handleImageUpload}  />
+              </div>
+              
               <div className=' flex w-full justify-center'>
                 <button className=' p-2 rounded-md hover:bg-slate-100 hover:text-neutral-900 w-fit' onClick={UpLoadImage}>Upload</button>
               </div>
