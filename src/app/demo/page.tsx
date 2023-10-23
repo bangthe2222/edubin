@@ -64,7 +64,8 @@ export default function ImageUpload() {
             <h2 className="text-lg font-bold mb-2">Selected Image:</h2>
             <div className=' flex justify-center'>  
               <div className=' grid'>
-              <img src={selectedImage} alt="Selected" className="max-w-[90%]" />
+              <img src={selectedImage} alt="Selected" width={200} className=" max-w-[90%]" />
+
               <p>Class: {objectClass}</p>
               <p>Prob: {probability}</p>
               
