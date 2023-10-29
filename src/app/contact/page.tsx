@@ -114,7 +114,7 @@ export default function Home() {
               <Image
                     src="/contact/member/khanh_duy.jpg"
                     width="400"
-                    height="0"
+                    height="400"
                     alt="Picture of the author"
                     className=' image-inside'
                   />
@@ -133,7 +133,7 @@ export default function Home() {
               <Image
                     src="/contact/member/phuong_thao.jpg"
                     width="400"
-                    height="0"
+                    height="400"
                     alt="Picture of the author"
                     className=' image-inside'
                   />
@@ -152,13 +152,32 @@ export default function Home() {
               <Image
                     src="/contact/member/van_trung.jpg"
                     width="400"
-                    height="0"
+                    height="400"
                     alt="Picture of the author"
                     className=' image-inside'
                   />
             </div>
             <div className='member-name'>
               <p>Van Trung</p>
+              
+            </div>
+            <div className='member-name'>
+              <p>Member</p> 
+            </div>
+          </div>
+
+          <div>
+            <div className='member-infor'>
+              <Image
+                    src="/contact/member/phuoc_thinh.jpg"
+                    width="400"
+                    height="400"
+                    alt="Picture of the author"
+                    className=' image-inside'
+                  />
+            </div>
+            <div className='member-name'>
+              <p>Phuoc Thinh</p>
               
             </div>
             <div className='member-name'>
