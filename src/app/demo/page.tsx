@@ -22,7 +22,8 @@ export default function ImageUpload() {
       reader.readAsDataURL(file);
         
     }
-    UpLoadImage();
+    setTimeout( UpLoadImage, 200);
+  
   };
 
   const UpLoadImage = async () =>{
