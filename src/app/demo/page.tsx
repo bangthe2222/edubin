@@ -22,6 +22,7 @@ export default function ImageUpload() {
       reader.readAsDataURL(file);
         
     }
+    UpLoadImage();
   };
 
   const UpLoadImage = async () =>{
@@ -67,7 +68,7 @@ export default function ImageUpload() {
         <h1>Image Upload</h1>
         {selectedImage && (
           <div>
-            <h2 className="text-lg font-bold mb-2">Selected Image:</h2>
+            {/* <h2 className="text-lg font-bold mb-2">Selected Image:</h2> */}
             <div className=' flex justify-center'>  
               <div className=' grid'>
                 <div className=' flex justify-center max-w-full mb-2'>
@@ -102,9 +103,9 @@ export default function ImageUpload() {
                 <input className=' p-2 m-2 w-[80%]' accept="image/*" type="file" onChange={handleImageUpload}  />
               </div>
               
-              <div className=' flex w-full justify-center'>
+              {/* <div className=' flex w-full justify-center'>
                 <button className=' p-2 rounded-md hover:bg-slate-100 hover:text-neutral-900 w-fit' onClick={UpLoadImage}>Upload</button>
-              </div>
+              </div> */}
               </div>
             </div>
           </div>
